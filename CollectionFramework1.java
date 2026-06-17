@@ -68,5 +68,8 @@ public class CollectionFramework1 {
         ArrayList<Integer> newlist = (ArrayList<Integer>) list.clone();
         System.out.println(newlist);
 
+        ArrayList<Integer> marks = new ArrayList<>();
+        marks.ensureCapacity(100);
+        System.out.println(marks.isEmpty());
     }
 }
