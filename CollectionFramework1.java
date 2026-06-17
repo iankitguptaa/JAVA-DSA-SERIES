@@ -71,5 +71,7 @@ public class CollectionFramework1 {
         ArrayList<Integer> marks = new ArrayList<>();
         marks.ensureCapacity(100);
         System.out.println(marks.isEmpty());
+
+        
     }
 }
