@@ -41,6 +41,20 @@ public class ArrayProblem1 {
         return maxi;
     }
 
+    static int[] getPosNegSum(int arr[]) {
+        int posSum = 0;
+        int negSum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > 0) {
+                posSum = posSum + arr[i];
+            } else {
+                negSum = negSum + arr[i];
+            }
+        }
+        int ans[] = { posSum, negSum };
+        return ans;
+    }
+
     public static void main(String[] args) {
         // 1. Find the average of array elements.
         // int[] arr = { 2, 4, 1, 3 };
@@ -60,7 +74,15 @@ public class ArrayProblem1 {
         // System.out.println(ans);
 
         // 4. Maximum element in array
-        int[] arr = { 2, 4, 5, 1, 7, 4 };
-        System.out.println(getMAx(arr));
+        // int[] arr = { 2, 4, 5, 1, 7, 4 };
+        // System.out.println(getMAx(arr));
+
+        // 5. +ve -ve sum in array
+        // int arr[] = { 2, -3, -5, -7, 9 };
+        // int ans[] = getPosNegSum(arr);
+        // System.out.println("Positive sum = " + ans[0]);
+        // System.out.println("Negative sum = " + ans[1]);
+
+        // 6. Count the no. of 0 and 1.
     }
 }
