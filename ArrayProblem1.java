@@ -31,6 +31,16 @@ public class ArrayProblem1 {
         return false;
     }
 
+    static int getMAx(int arr[]) {
+        int maxi = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > maxi) {
+                maxi = arr[i];
+            }
+        }
+        return maxi;
+    }
+
     public static void main(String[] args) {
         // 1. Find the average of array elements.
         // int[] arr = { 2, 4, 1, 3 };
@@ -49,5 +59,8 @@ public class ArrayProblem1 {
         // boolean ans = LinearSearch(arr, 6);
         // System.out.println(ans);
 
+        // 4. Maximum element in array
+        int[] arr = { 2, 4, 5, 1, 7, 4 };
+        System.out.println(getMAx(arr));
     }
 }
